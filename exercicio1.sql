@@ -4,31 +4,31 @@ USE DATABASE exercicio1
 GO
 
 CREATE TABLE Aluno(
-ra			INT				NOT NULL,
-nome		VARCHAR(50)		NOT NULL,
-sobrenome   VARCHAR(100)	NOT NULL,
-rua			VARCHAR(200)	NOT NULL,
-num			INT				NOT NULL,
-bairro		VARCHAR(50)		NOT NULL,
-cep			CHAR(8)			NOT NULL,
-telefone	CHAR(8)			NULL
+ra			      INT				    NOT NULL,
+nome		      VARCHAR(50)		NOT NULL,
+sobrenome     VARCHAR(100)	NOT NULL,
+rua			      VARCHAR(200)	NOT NULL,
+num			I     INT				    NOT NULL,
+bairro		    VARCHAR(50)		NOT NULL,
+cep			      CHAR(8)		  	NOT NULL,
+telefone	    CHAR(8)		  	NULL
 PRIMARY KEY(ra)
 )
 
 CREATE TABLE Cursos(
-codigo			INT				NOT NULL,
-nome			VARCHAR(50)		NOT NULL,
-carga_horaria	INT				NOT NULL,
-turno			VARCHAR(25)		NOT NULL
+codigo			     INT				    NOT NULL,
+nome			       VARCHAR(50)		NOT NULL,
+carga_horaria	   INT				    NOT NULL,
+turno			       VARCHAR(25)		NOT NULL
 PRIMARY KEY(codigo)
 )
 
 CREATE TABLE Disciplinas(
-codigo			INT				NOT NULL,
-nome			VARCHAR(50)		NOT NULL,
-carga_horaria	INT				NOT NULL,
-turno			VARCHAR(25)		NOT NULL,
-semestre		INT				NOT NULL
+codigo		  	 INT			    	NOT NULL,
+nome			     VARCHAR(50)		NOT NULL,
+carga_horaria	 INT				    NOT NULL,
+turno			     VARCHAR(25)		NOT NULL,
+semestre		   INT			     	NOT NULL
 PRIMARY KEY(codigo)
 )
 
